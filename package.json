@@ -2,12 +2,12 @@
   "name": "apirest",
   "version": "1.0.0",
   "description": "this a backend of system of asesories in academic university",
-  "main": "app.js",
+  "main": "server.js",
   "scripts": {
      "dev": "nodemon Servidor.js",
     "start": "node ."
   },
-  "author": "",
+  "author": "Kevin",
   "license": "ISC",
   "dependencies": {
     "cors": "^2.8.5",

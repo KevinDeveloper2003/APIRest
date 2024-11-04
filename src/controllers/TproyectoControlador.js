@@ -1,4 +1,4 @@
-const TipoProyecto = require('../models/TProyectoModelo');
+const TipoProyecto = require('../models/TproyectoModelo');
 
 // Listamos todos los tipos del proyecto
 exports.listarTiposProyecto = async (req, res) => {
