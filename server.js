@@ -2,7 +2,7 @@ const express = require('express');
 require('./db/db-mongo-connect');
 const ClienteRoutes = require('./src/routes/clienteRutas');
 const EtapaRoutes = require('./src/routes/etapaRutas');
-const ProyectoRoutes = require('./src/routes/proyectoRutas');
+const UniversidadRoutes = require('./src/routes/universidadRutas');
 const TipoProyectoRoutes = require('./src/routes/TproyectoRutas');
 
 const app = express();
@@ -20,7 +20,7 @@ app.get('/', (req, res) => {
 
 app.use('/cliente', ClienteRoutes);
 app.use('/etapa', EtapaRoutes);
-app.use('/proyecto', ProyectoRoutes);
+app.use('/Universidad', UniversidadRoutes);
 app.use('/tipoProyecto', TipoProyectoRoutes);
 
 
