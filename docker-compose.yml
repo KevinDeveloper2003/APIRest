@@ -34,7 +34,7 @@ services:
   mongodb:
     image: mongo
     ports:
-      - "27020:27017"
+      - "27020:5544"
     environment:
       MONGO_INITDB_ROOT_USERNAME: admin
       MONGO_INITDB_ROOT_PASSWORD: admin

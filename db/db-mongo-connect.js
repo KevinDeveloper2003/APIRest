@@ -1,10 +1,23 @@
 const mongoose = require('mongoose');
 
+const mongoURL = "mongodb+srv://admin:admin@myapp.oaael.mongodb.net/?retryWrites=true&w=majority&appName=myapp";
 
-mongoose.connect("mongodb://localhost:27017");
+// Configuramos la conexión a mongoDB
+mongoose.connect(mongoURL, { useNewUrlParser: true, useUnifiedTopology: true });
 
-const connection = mongoose.connection;
+// Eventos de conexión
+mongoose.connection.on('connected', () => {
+    console.log('Conexión a MongoDB establecida.');
+  });
 
-connection.once('open', () => {
-    console.log('Base de Datos conectada exitosamente a MongoDB');
-});
+mongoose.connection.on('error', (err) => {
+    console.error('Error de conexión a MongoDB:', err);
+  });
+  
+mongoose.connection.on('disconnected', () => {
+    console.log('Desconectado de MongoDB.');
+  });
+  
+// Exportamos la conexión para usarla en otros archivos
+module.exports = mongoose.connection;
+
