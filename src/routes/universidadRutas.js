@@ -1,4 +1,4 @@
-const universidadController = require('../controller/universidadControlador');
+const universidadController = require('../controllers/universidadControlador');
 const express = require('express');
 
 const router = express.Router();
