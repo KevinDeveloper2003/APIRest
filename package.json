@@ -4,14 +4,14 @@
   "description": "this a backend of system of asesories in academic university",
   "main": "server.js",
   "scripts": {
-     "dev": "nodemon Servidor.js",
+    "dev": "nodemon Servidor.js",
     "start": "node ."
   },
   "author": "Kevin",
   "license": "ISC",
   "dependencies": {
     "cors": "^2.8.5",
-    "dotenv": "^16.4.5",
+    "dotenv": "^16.4.7",
     "express": "^4.21.1",
     "mongodb": "^6.10.0",
     "mongoose": "^8.8.0",
